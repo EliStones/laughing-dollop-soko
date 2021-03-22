@@ -1,3 +1,3 @@
 # laughing-dollop-soko
 
-# A mobile application 
+A mobile application 
