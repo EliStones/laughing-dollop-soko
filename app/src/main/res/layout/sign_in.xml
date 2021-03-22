@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/btnSignIn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/btnSignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn2"
+        android:layout_marginTop="20dp"
+        android:text="Sign in to Grocery App"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvWelcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="10dp"
+        android:text="Enter email & password to continue"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome2"
+        android:hint="Email Address"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:autofillHints="Your username"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:autofillHints="Your username"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etPassword"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:text="Forgot password?"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tvWrongEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Wrong email or password"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:text="DISMISS"
+        android:textColor="@color/purple_700"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/etPassword"
+        android:background="@color/teal_200"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

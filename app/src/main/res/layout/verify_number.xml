@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add ToolbarTop"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvAddNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvToDo"
+        android:layout_marginTop="20dp"
+        android:text="Verify  your number"/>
+
+    <TextView
+        android:id="@+id/tvAddNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvAddNumber1"
+        android:layout_marginTop="10dp"
+        android:text="4 digit code sent to +254  727 307 123" />
+
+    <EditText
+        android:id="@+id/etVerify1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvAddNumber2"
+        android:textColor="@color/black"
+        android:width="90dp"/>
+
+    <EditText
+        android:id="@+id/etVerify2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/etVerify1"
+        android:width="90dp"/>
+
+    <EditText
+        android:id="@+id/etVerify3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/etVerify2"
+        android:width="90dp"/>
+
+    <EditText
+        android:id="@+id/etVerify4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/etVerify3"
+        android:width="90dp"/>
+
+    <TextView
+        android:id="@+id/tvResendVerifyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etVerify2"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Resend"/>
+
+    <Button
+        android:id="@+id/btnSubmitVerifyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etVerify2"
+        android:textColor="@color/white"
+        android:text="VERIFY"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
